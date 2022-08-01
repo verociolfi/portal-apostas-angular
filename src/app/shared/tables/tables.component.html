@@ -1,0 +1,55 @@
+
+<div class="card m-2 shadow">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Hora</th>
+      <th scope="col">Evento</th>
+      <th scope="col">1</th>
+      <th scope="col">X</th>
+      <th scope="col">2</th>
+      <th scope="col">1/X</th>
+      <th scope="col">2/X</th>
+      <th scope="col">1/2</th>
+      <th scope="col">Gols</th>
+      <th scope="col">Acima</th>
+      <th scope="col">Abaixo</th>
+      <th scope="col">Mais</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let event of events">
+      <th scope="row">{{ event.id }}</th>
+      <td>
+        <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + event.flag1" class="me-2" style="width: 20px">
+        {{ event.name1 }} x {{ event.name2 }}
+        <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + event.flag2" class="me-2" style="width: 20px">
+      </td>
+      <td>{{ event.a | number}}</td>
+      <td>{{ event.x | number }}</td>
+      <td>{{ event.b | number}}</td>
+      <td>{{ event.c | number }}</td>
+      <td>{{ event.d | number}}</td>
+      <td>{{ event.e | number }}</td>
+      <td>{{ event.gols | number}}</td>
+      <td>{{ event.acima | number }}</td>
+      <td>{{ event.abaixo | number}}</td>
+      <td><button class="btn btn-success">Mais</button></td>
+
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-between p-2">
+    <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()">
+    </ngb-pagination>
+
+    <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()">
+      <option [ngValue]="2">2 itens</option>
+      <option [ngValue]="4">4 itens</option>
+      <option [ngValue]="6">6 itens</option>
+    </select>
+  </div>
+
+</div>
