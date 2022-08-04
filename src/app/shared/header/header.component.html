@@ -1,39 +1,78 @@
 
-<nav class="py-2 fixed-top navbar-expand-lg navbar-dark ">
-  <div class="container d-flex flex-wrap">
-    <ul class="nav me-auto">
 
-    </ul>
-    <ul class="nav">
-      <a href="#" class="nav-link link-light px-2">Follow us:</a>
-      <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i class="bi bi-facebook"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i class="bi bi-instagram"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i class="bi bi-twitter"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i class="bi bi-whatsapp"></i></a></li>
-    </ul>
-  </div>
-</nav>
-<header class="py-3 bg-desportos ">
-  <div class="container d-flex flex-wrap justify-content-between mt-5 border-secondary border-top">
-    <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-      <img src="../../../assets/img/logomax.png" class="img-fluid logo"/>
-    </a>
+<header class="bg-desportos">
+  <nav class="nav pt-1">
+    <div class="container d-flex flex-wrap justify-content-around sheader">
+      <ul class="nav me-auto nresponsive"></ul>
+      <ul class="nav d-flex align-items-center hresponsive">
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+              class="bi bi-search"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+              class="bi bi-person-circle"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+              class="bi bi-bag-fill"></i></a></li>
 
-      <ul class="nav me-auto d-flex align-items-center">
-        <li class="nav-item"><a href="#" class="nav-link btn btn-success text-white">Desportos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Ao Vivo</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Jogos da Semana</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Promoções</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Jogos Finalizados</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Virtuais</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Comunidade</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Regras</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Sobre Nós</a></li>
       </ul>
+      <a href="/" class="hresponsive">
+        <img src="../../../assets/img/logomax.png" class="img-fluid rlogo"/>
+      </a>
       <ul class="nav d-flex align-items-center">
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i class="bi bi-search"></i></a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i class="bi bi-person-circle"></i></a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i class="bi bi-bag-fill"></i></a></li>
+        <a href="#" class="nav-link link-light px-2 nresponsive">Follow us:</a>
+        <li class="nav-item sm-responsive"><a href="#" class="nav-link link-light px-2"><i
+              class="bi bi-facebook"></i></a></li>
+        <li class="nav-item sm-responsive"><a href="#" class="nav-link link-light px-2"><i
+              class="bi bi-instagram sm-responsive"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+              class="bi bi-twitter sm-responsive"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+              class="bi bi-whatsapp sm-responsive"></i></a></li>
       </ul>
+    </div>
+  </nav>
+  <div class="container d-flex flex-wrap
+    border-secondary border-top sheader">
+    <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto">
+      <img src="../../../assets/img/logomax.png" class="img-fluid logo
+        nresponsive"/>
+    </a>
+    <ul class="nav me-auto d-flex flex-wrap align-items-center nresponsive">
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('home')">Desportos</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('about-us')">Ao Vivo</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('about-us')">Jogos da Semana</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('promotions')">Promoções</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('about-us')">Jogos Finalizados</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('about-us')">Virtuais</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('community')">Comunidade</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('rules')">Regras</button></li>
+      <li class="nav-item"><button type="button" class="btn btn-outline-success
+          menu" (click)="navigation('about-us')">Sobre Nós</button></li>
+    </ul>
+    <ul class="nav d-flex align-items-center nresponsive">
+      <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+            class="bi bi-search"></i></a></li>
+      <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+            class="bi bi-person-circle"></i></a></li>
+      <li class="nav-item"><a href="#" class="nav-link link-light px-2"><i
+            class="bi bi-bag-fill"></i></a></li>
+    </ul>
   </div>
+  <div class="container py-2 hresponsive pb-3">
+    <ngb-accordion #acc="ngbAccordion">
+      <ngb-panel title="Menu" class="">
+        <ng-template ngbPanelContent>
+          <li class="nav-item"><a class="nav-link text-white"(click)="navigation('home')">Desportos</a></li>
+          <li class="nav-item"><a class="nav-link text-white"(click)="navigation('home')">Desportos</a></li>
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+  </div>
+
 </header>

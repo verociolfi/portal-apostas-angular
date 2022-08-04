@@ -140,9 +140,7 @@ const EVENTS: Event[] = [
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent implements OnInit {
-  page = 1;
-  pageSize = 2;
-  collectionSize = EVENTS.length;
+
   events: Event[] = [];
 
   constructor() {
@@ -152,9 +150,8 @@ export class TablesComponent implements OnInit {
   }
 
   refreshCountries() {
-    this.events = EVENTS
-      .map((event, i) => ({id: i + 1, ...event}))
-      .slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
+    this.events = EVENTS;
+
   }
 }
 

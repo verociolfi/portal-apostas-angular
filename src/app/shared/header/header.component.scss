@@ -9,3 +9,102 @@
     background-position: bottom;
     position: relative;
 }
+.menu{
+  border: 0px;
+    color: #fff;
+}
+.hresponsive{
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  .nresponsive{
+    display: flex !important;
+  }
+
+  .hresponsive{
+    display: none !important;
+  }
+  .rlogo{
+    display: none !important;
+
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nresponsive{
+    display: none !important;
+  }
+
+  .hresponsive{
+    display: block;
+  }
+  .rlogo{
+    max-width: 5rem;
+
+  }
+
+}
+@media only screen and (min-width: 425px) and (max-width: 765px) {
+  .nresponsive{
+    display: none !important;
+  }
+  .hresponsive{
+    display: block;
+  }
+  .rlogo{
+    max-width: 6rem;
+
+  }
+  .sm-responsive{
+    display: none!important;
+  }
+  .sheader{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .nresponsive{
+    display: none !important;
+  }
+  .hresponsive{
+    display: block;
+  }
+  .rlogo{
+    max-width: 6rem;
+
+  }
+  .sm-responsive{
+    display: none!important;
+  }
+  .sheader{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
+  .nresponsive{
+    display: none !important;
+  }
+  .hresponsive{
+    display: block;
+  }
+  .rlogo{
+    max-width: 6rem;
+
+  }
+  .sm-responsive{
+    display: none!important;
+  }
+  .sheader{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}

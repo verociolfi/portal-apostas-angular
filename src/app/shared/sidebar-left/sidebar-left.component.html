@@ -1,20 +1,47 @@
-<div class="flex-shrink-0 p-3"  style="min-width: 15rem;">
-  <a href="/" class="d-flex align-items-center pb-3 mb-3  link-light text-decoration-none border-bottom">
+<div class="flex-shrink-0 p-3" style="min-width: 15rem;">
+  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-light
+    text-decoration-none border-bottom">
     <span class="fs-5 fw-semibold">Esportes</span>
   </a>
   <ul class="nav flex-column">
+    <li class="nav-item mb-2">
+      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="test">
+        <ngb-panel title="Populares">
+          <ng-template ngbPanelContent>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0
+                text-light">Brasileirão Série A</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0
+                text-light">Liga Inglesa</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0
+                text-light">La Liga</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0
+                text-light">Premier League</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0
+                text-light">Jogos Amigáveis de Clubes</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0
+                text-light">Futebol Internacional</a></li>
+
+          </ng-template>
+        </ngb-panel>
+
+      </ngb-accordion>
+    </li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Futebol</a></li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tenis</a></li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Ping Pong</a></li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Golf</a></li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Casino</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Corrida de Cavalos</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Formula 1</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Corrida
+        de Cavalos</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Formula
+        1</a></li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Volleyboll</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Corrida de Resistência</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Corrida
+        de Resistência</a></li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Cricket</a></li>
     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Andebol</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Futebol Americano</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Futebol
+        Americano</a></li>
 
 
   </ul>

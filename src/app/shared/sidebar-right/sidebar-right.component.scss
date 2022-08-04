@@ -1,0 +1,90 @@
+.fix {
+  position: fixed;
+  top: 15rem;
+  width: 20rem;
+
+}
+
+.sidebar-fix {
+  width: 20rem;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  .fix {
+    width: 19rem;
+
+  }
+
+  .sidebar-fix {
+    width: 21rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  .fix {
+    width: 16rem;
+    top: 40rem;
+    right: 1rem;
+    box-shadow: 9px 7px 93px -47px rgb(0 0 0 / 73%);
+  }
+
+  .sidebar-fix {
+    width: 0rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .fix {
+    width: 45rem;
+    top: 43rem;
+    right: 1rem;
+    box-shadow: 9px 7px 93px -47px rgb(0 0 0 / 73%);
+  }
+
+  .sidebar-fix {
+    width: 0rem;
+  }
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 765px) {
+  .fix {
+    top: 41rem;
+    right: 1rem;
+    width: 25rem;
+    box-shadow: 9px 7px 93px -47px rgb(0 0 0 / 73%);
+  }
+
+  .sidebar-fix {
+    width: 0rem;
+  }
+
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .fix {
+    top: 42rem;
+    right: 1rem;
+    width: 22rem;
+    box-shadow: 9px 7px 93px -47px rgb(0 0 0 / 73%);
+  }
+
+  .sidebar-fix {
+    width: 0rem;
+  }
+
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .fix {
+    top: 40rem;
+    right: 0rem;
+    width: 19rem;
+    box-shadow: 9px 7px 93px -47px rgb(0 0 0 / 73%);
+  }
+
+  .sidebar-fix {
+    width: 0rem;
+  }
+
+}
