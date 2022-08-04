@@ -1,0 +1,36 @@
+
+<main class="form-signin mt-5 m-auto">
+  <div class="bg-dark shadow rounded text-center card-bg" >
+  <form class="p-4">
+    <img class="mb-4" src="../../../assets/img/logomax.png" alt="" width="100" height="100">
+    <h1 class="h3 mb-3 fw-normal text-white">Faça seu Cadastro</h1>
+
+    <div class="form-floating m-1">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput ">Nome Completo</label>
+    </div>
+    <div class="form-floating m-1">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput ">E-mail</label>
+    </div>
+    <div class="form-floating m-1">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Senha</label>
+    </div>
+    <div class="form-floating m-1">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Repetir Senha</label>
+    </div>
+
+
+    <button class="w-100 btn btn-lg btn-success mb-4" type="submit">Registrar</button>
+    <button type="button" class="btn btn-link link-light" (click)="navigation('login')">Já sou membro</button>
+
+  </form>
+</div>
+<div class="d-flex m-auto form-signin">
+  <button class="w-100 btn btn-lg btn-success mb-4" (click)="navigation('home')">voltar</button>
+</div>
+
+</main>
+

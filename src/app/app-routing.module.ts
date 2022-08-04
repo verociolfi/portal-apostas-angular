@@ -36,6 +36,21 @@ const routes: Routes = [
         (m) => m.PagesModule
       ),
   },
+  {
+    path: 'register',
+    loadChildren: () =>
+      import('./pages/pages.module').then(
+        (m) => m.PagesModule
+      ),
+  },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./pages/pages.module').then(
+        (m) => m.PagesModule
+      ),
+  },
+
 
 ];
 
